@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(34, 233, 210);
+    height: 100px;
+    width: 300px;
+}
+
+img {
+    border-radius: 20px 20px 20px 20px;
+}
+#orange-cat {
+    /* display: none; */
+    height: 300px;
+
+}
+
+#grey-cat {
+    /* display: none; */
+    height: 300px;
+
+}
