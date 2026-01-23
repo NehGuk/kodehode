@@ -20,19 +20,14 @@ header {
 .main-header {
     height: 100vh;
     width: 100%;
-    background-image: url("assets/velkommen.png");
+    background-image: url("../assets/velkommen.png");
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(100%) brightness(80%);
     
 }
 
-/* img {
-    border-radius: 20px 20px 20px 20px;
-} */
-
 .content {
-    /* width: 600px; */
     display: flex;
     justify-content:center
 }
@@ -41,12 +36,15 @@ main article {
     max-width: 65ch;
 }
 
+article h1 {
+    margin: 1em 0 1em 0;;
+}
 h2 {
     margin: 3em 0 1em 0;;
 }
 
 ul {
-   margin: 0 0 2em 2em;
+   margin: 0 0 2em 1em;
 }
 
 ol {
@@ -73,33 +71,7 @@ ol {
     height: 300px;
 }
 
-.header-img {
-    display: block;
-    height: 80px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
 #back-button {
     display: block;
     margin-top: 20px;
-}
-
-
-/* NAVIGATION TEST */
-nav {
-    max-width: 40vw;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul li {
-    border: solid 1px green;
-    padding: 1em 2em;
 }
