@@ -17,6 +17,11 @@ header {
     width: 100%;
 }
 
+h1 a {
+    text-decoration: none;
+    color: rgba(20, 40, 10, 0.9);
+}
+
 .main-header {
     margin-top: -10px;
     height: 100vh;
