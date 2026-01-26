@@ -1,8 +1,8 @@
-nav {
+.nav-test {
     max-width: 40vw;
 }
 
-nav ul {
+.nav-test-ul {
     list-style: none;
     margin: 0;
     padding: 1em;
@@ -10,7 +10,7 @@ nav ul {
     justify-content: space-between;
 }
 
-nav ul li {
+.nav-test-ul-li {
     border: solid 1px green;
     padding: 1em 2em;
 }
