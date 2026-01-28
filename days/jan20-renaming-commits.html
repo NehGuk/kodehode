@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/nav-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
     <title>Kodehode | Jan 20 | Renaming commits</title>
   </head>
   <body>
     <nav class="nav-bar">
       <div>
-        <h1><a href="../">Kodehode</a></h1>
+        <h1><a href="../index.html">Kodehode</a></h1>
       </div>
       <div>
         <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
+          <li>
+            <a href="https://scrimba.com/u4385f08" target="_blank">Scrimba</a>
+          </li>
+          <li>
+            <a
+              href="https://jobloop.instructure.com/courses/530?invitation=5Yjm0mwnKNNJdIKZkHQdKCVq8H0zKRgzpvnZh91o"
+              target="_blank"
+              >Canvas</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/NehGuk" target="_blank">Github</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -29,11 +47,12 @@
           commit messages. However, things may go wrong at times. Silly typos,
           meaningless messages, inconsistent verb tenses. There's a lot we may
           want to improve. Today I played around with the infamous
-          <code>git rebase -i HEAD~N</code> strategy. What the heck is that?
-          This allows us to edit commit messages that have already been pushed
-          to our repository. This is how it works:
+          <code>git rebase -i HEAD~N</code>
+          strategy. What the heck is that? This allows us to edit commit
+          messages that have already been pushed to our repository. This is how
+          it works:
         </p>
-        <pre><code>
+        <pre><code class="language-js">
                 git rebase -i HEAD~3
             </code></pre>
         <p>
@@ -47,7 +66,7 @@
           every commit message you wish to edit. Once you're done, proceed with
           the final trick:
         </p>
-        <pre><code>
+        <pre><code class="language-js">
                 git push --force origin
             </code></pre>
         <p>

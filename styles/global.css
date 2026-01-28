@@ -80,3 +80,8 @@ ol {
   display: block;
   margin-top: 20px;
 }
+
+pre code {
+  font-size: 0.9em;
+  margin: 3em 0 2em 0;
+}
