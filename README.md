@@ -1,1 +1,1 @@
-# Javascript | Oppgaver 1
+# Javascript | Oppgave 1
