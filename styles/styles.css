@@ -1,13 +1,9 @@
-/* GLOBAL STYLES*/
+/* global styles*/
 
 * {
   margin: 0;
   box-sizing: border-box;
 }
-
-/* add typography here */
-
-/* add colours here */
 
 body {
   height: 100vh;
@@ -15,6 +11,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* global styles - typography */
+
+article .title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+article p {
+  padding-right: 2em;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+/* global styles - colours */
 
 /* CARDS LAYOUT */
 
