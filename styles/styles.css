@@ -10,16 +10,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--very-light-gray);
+}
+
+/* global styles - colours */
+
+:root {
+  --card-1-background: hsl(31, 77%, 52%);
+  --card-2-background: hsl(184, 100%, 22%);
+  --card-3-background: hsl(179, 100%, 13%);
+  --text: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsl(0, 0%, 95%);
+  --very-light-gray: hsl(0, 0%, 95%);
 }
 
 /* global styles - typography */
 
 article .title {
   text-transform: uppercase;
+  transform: scaleY(1.2);
+  transform-origin: top left;
+  font-size: 1.5em;
   font-family: "Big Shoulders", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  color: var(--transparent-white);
+  font-size: 35px;
 }
 
 article p {
@@ -29,6 +46,8 @@ article p {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5em;
+  color: var(--text);
+  font-size: 15px;
 }
 
 a {
@@ -39,18 +58,17 @@ a {
   line-height: 1.5em;
 }
 
-/* global styles - colours */
-
 /* CARDS LAYOUT */
 
 .cards-container {
-  max-width: 1200px;
+  max-width: 1000px;
   height: 30em;
   margin: 0 2em;
   display: flex;
 }
 
 .cards-container > article {
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -59,39 +77,47 @@ a {
 }
 
 article > img {
-  max-width: 50px;
-}
-
-article > .title {
-}
-
-article > .description {
+  max-width: 60px;
 }
 
 article > .cta-container {
-  margin: 3em 0 0 0;
+  margin: auto 0 2em 0;
 }
 
 article .cta-container > .cta {
-  background-color: white;
   border-radius: 30px;
   text-align: center;
-  padding: 1em 3em;
+  padding: 0.8em 2em;
   text-decoration: none;
+  background-color: var(--very-light-gray);
 }
 
 .card-sedans {
   background-color: lightpink;
   border-radius: 10px 0 0 10px;
+  background-color: var(--card-1-background);
 }
 
 .card-suvs {
   background-color: lightgreen;
+  background-color: var(--card-2-background);
 }
 
 .card-luxury {
-  background-color: lightgoldenrodyellow;
+  background-color: var(--card-3-background);
   border-radius: 0 10px 10px 0;
+}
+
+.card-sedans a {
+  color: var(--card-1-background);
+}
+
+.card-suvs a {
+  color: var(--card-2-background);
+}
+
+.card-luxury a {
+  color: var(--card-3-background);
 }
 
 @media screen and (width <= 900px) {
