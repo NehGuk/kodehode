@@ -278,4 +278,4 @@ const smileNow = (something) => {
   }
 }
 
-console.log("Heyyy! 😎")
+console.log("Yay, done! 😎")
