@@ -1,0 +1,87 @@
+/* GLOBAL STYLES*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* add typography here */
+
+/* add colours here */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARDS LAYOUT */
+
+.cards-container {
+  max-width: 1200px;
+  height: 30em;
+  margin: 0 2em;
+  display: flex;
+}
+
+.cards-container > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
+  padding: 3em;
+}
+
+article > img {
+  max-width: 50px;
+}
+
+article > .title {
+}
+
+article > .description {
+}
+
+article > .cta-container {
+  margin: 3em 0 0 0;
+}
+
+article .cta-container > .cta {
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+
+.card-sedans {
+  background-color: lightpink;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-suvs {
+  background-color: lightgreen;
+}
+
+.card-luxury {
+  background-color: lightgoldenrodyellow;
+  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (width <= 900px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card-sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-suvs {
+  }
+
+  .card-luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
