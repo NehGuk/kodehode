@@ -23,6 +23,22 @@ funksjonen)
 
 // Skriv koden for oppgave 1 her
 
+// short version
+
+function checkOddOrEven(someNumber) {
+  return someNumber % 2 === 0 ? "Partall" : "Oddetall"
+}
+
+// a more explicit version
+
+function checkOddOrEvenAgain(someNumber) {
+  if (someNumber % 2 === 0) {
+    return "Partall"
+  } else {
+    return "Oddetall"
+  }
+}
+
 /******************************************************************************
 2.
 
@@ -36,6 +52,10 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
+
+function scream(someString) {
+  return `${someString.toUpperCase()}!`
+}
 
 /******************************************************************************
 3.
@@ -61,6 +81,22 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 
 // Skriv koden for oppgave 3 her
 
+function greetMe(name, hour) {
+  if (hour < 0 || hour > 23) {
+    return `Ugyldig tid`
+  } else if (hour <= 5) {
+    return `God natt, ${name}`
+  } else if (hour <= 11) {
+    return `God morgen, ${name}`
+  } else if (hour <= 17) {
+    return `God dag, ${name}`
+  } else if (hour <= 23) {
+    return `God kveld, ${name}`
+  } else {
+    return `OOps, something went wrong!`
+  }
+}
+
 /******************************************************************************
 4.
 
@@ -77,6 +113,9 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 ******************************************************************************/
 
 // Skriv koden for oppgave 4 her
+function removeFirstAndLast(someArray) {
+  return someArray.slice(1, -1)
+}
 
 /******************************************************************************
 5.
@@ -98,6 +137,12 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 ******************************************************************************/
 
 // Skriv koden for oppgave 5 her
+
+function cheerUp(aString) {
+  return aString.toLowerCase().includes("vanskelig")
+    ? aString.replace("vanskelig", "gøy").trim("")
+    : aString
+}
 
 /******************************************************************************
 6.
@@ -124,6 +169,16 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 
 // Skriv koden for oppgave 6 her
 
+let steg1 = items.shift()
+
+let steg2 = items.map((item) => (item === "Viskelær" ? "Linjal" : item))
+
+let steg3 = items.splice(1, 2, "Markeringspenn")
+
+let steg4 = items.join(" | ")
+console.log(steg4)
+
+let wordsWithE = items.filter((item) => item.includes("e"))
 /******************************************************************************
 7.
 
@@ -150,6 +205,34 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 
 // Skriv koden for oppgave 7 her
 
+// Without mutating the original array
+function addOrRemove(anArray, aString) {
+  let newArray = []
+  if (anArray.some((item) => item.toLowerCase() === aString.toLowerCase())) {
+    newArray = anArray.filter(
+      (item) => item.toLowerCase() !== aString.toLowerCase()
+    )
+    return newArray
+  } else {
+    newArray = [...anArray, aString]
+    return newArray
+  }
+}
+
+// Mutating the original array
+function addOrRemoveMutating(anArray, aString) {
+  const stringPassed = aString.toLowerCase()
+  const index = anArray.findIndex((item) => item.toLowerCase() === stringPassed)
+
+  if (index !== -1) {
+    anArray.splice(index, 1)
+  } else {
+    anArray.push(aString)
+  }
+
+  return anArray
+}
+
 /******************************************************************************
 8.
 
@@ -174,6 +257,25 @@ Returner "😎Ja😎" hvis parameteret er true, eller "😎Slapp av😎" hvis pa
 Hvis parameteret er en annen datatype:
 Returner "😎Kun primitive verdier😎".
 
+
+
+
 ******************************************************************************/
 
 // Skriv koden for oppgave 8 her
+
+const smileNow = (something) => {
+  switch (typeof something) {
+    case "string":
+      return `$😎${something}😎`
+
+    case "number":
+      return `😎${(something * 2).toString()}😎`
+    case "boolean":
+      return something ? `😎Ja😎` : `😎Slap av😎`
+    default:
+      return `😎Kun primitive verdier😎`
+  }
+}
+
+console.log("Heyyy! 😎")
