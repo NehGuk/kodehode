@@ -217,7 +217,7 @@ skal returnere "whao is ohe ptino tf ohis?"
 
 ******************************************************************************/
 
-// This tool me a day or more. Thought that string.replaceALL() would do the job. Nope.
+// This took me a day or more. Thought that string.replaceALL() would do the job. Nope.
 
 function doubleSwap(string, charA, charB) {
   let decodedString = ""
