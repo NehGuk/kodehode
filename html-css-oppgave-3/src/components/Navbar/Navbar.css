@@ -28,4 +28,5 @@ a {
 
 li:first-child {
   margin-right: auto;
+  font-weight: 600;
 }

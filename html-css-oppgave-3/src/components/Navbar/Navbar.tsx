@@ -5,16 +5,19 @@ function Navbar() {
     <nav>
       <ol>
         <li id="planet-name">
-          <a href="#1">Planet X</a>
+          <a href="#1">Mars</a>
         </li>
         <li>
-          <a href="#2">Gallery</a>
+          <a href="#2">Facts</a>
         </li>
         <li>
-          <a href="#3">Facts</a>
+          <a href="#3">Gallery</a>
         </li>
+        {/* <li>
+          <a href="#4">Video</a>
+        </li> */}
         <li>
-          <a href="#4">Resources</a>
+          <a href="#5">Resources</a>
         </li>
       </ol>
     </nav>

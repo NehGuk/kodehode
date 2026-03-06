@@ -3,22 +3,17 @@ import "./SectionIntro.css"
 function SectionIntro() {
   return (
     <section className="intro" id="1">
-      <h1>Heading</h1>
+      <h1>The Red Planet</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-        sapiente nulla hic nobis amet nihil ducimus a assumenda, quia, adipisci
-        voluptate consequatur at minima sed odio delectus blanditiis eligendi
-        numquam?
+        Mars is the fourth planet from the Sun, named after the Roman god of war
+        for its striking blood-red appearance. This rust-colored world, roughly
+        half the size of Earth, boasts the tallest volcano in the solar system —
+        Olympus Mons — and a canyon system that stretches over 4,000 kilometers
+        long. With a thin atmosphere, freezing temperatures, and evidence of
+        ancient riverbeds and polar ice caps, Mars remains the most promising
+        candidate for future human exploration and a potential second home for
+        humanity.
       </p>
-      <iframe
-        className="video"
-        width="649"
-        height="360"
-        src="https://www.youtube.com/embed/6E6Cn5RSe_I?rel=0&modestbranding=1&controls=1&autoplay=1&mute=1"
-        frameborder="0"
-        allow="encrypted-media"
-        allowfullscreen
-      ></iframe>
     </section>
   )
 }

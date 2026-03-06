@@ -2,7 +2,7 @@ import "./SectionResources.css"
 
 function SectionResources() {
   return (
-    <section className="resources" id="4">
+    <section className="resources" id="5">
       <h2>Resources</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores

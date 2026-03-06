@@ -2,7 +2,7 @@ import "./SectionFacts.css"
 
 function SectionFacts() {
   return (
-    <section className="facts" id="3">
+    <section className="facts" id="2">
       <h2>Facts</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
