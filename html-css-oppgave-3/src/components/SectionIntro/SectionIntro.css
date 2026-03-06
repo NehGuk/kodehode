@@ -1,0 +1,9 @@
+.intro {
+  min-height: 100vh;
+  padding: 5em 3em;
+  background-color: darkslategray;
+}
+
+.video {
+  max-width: 80vw;
+}
