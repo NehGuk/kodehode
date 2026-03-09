@@ -1,5 +1,27 @@
 .resources {
   min-height: 70vh;
   padding: 5em 3em;
-  background-color: darkgoldenrod;
+  background-color: #332012;
+  display: flex;
+  justify-content: center;
+}
+
+.resources_box {
+  max-width: 900px;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.resources_box h2 {
+}
+
+.resources_box ul {
+  list-style: circle;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.resources_box ul li {
+  margin: 1em 0 0 0;
 }
