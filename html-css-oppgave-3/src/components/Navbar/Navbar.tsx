@@ -1,12 +1,16 @@
 import "./Navbar.css"
+import homeIcon from "../../assets/earth-grid.png"
 
 function Navbar() {
   return (
     <nav>
       <ol>
         <li id="planet-name">
-          <a href="#1">Mars</a>
+          <a href="#1">
+            <img src={homeIcon} className="nav_logo" />
+          </a>
         </li>
+
         <li>
           <a href="#2">Facts</a>
         </li>

@@ -1,32 +1,43 @@
 nav {
-  background-color: yellow;
+  background-color: rgba(10 10 30 / 50%);
   height: var(navbar-height);
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   gap: 2em;
   position: sticky;
-  top: 0;
+  top: 1.5em;
+  margin: 0 auto;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  z-index: 10;
 }
 
-ol {
+nav ol {
   width: 100%;
   list-style: none;
-
   display: flex;
   gap: 2em;
   padding: 0 2em;
 }
 
-li {
-  color: green;
+nav ol li {
+  padding-top: 0.5em;
 }
 
-a {
+nav ol li a {
+  color: rgba(200 200 200 / 80%);
   text-decoration: none;
 }
 
-li:first-child {
+nav ol li:first-child {
   margin-right: auto;
   font-weight: 600;
+}
+
+.nav_logo {
+  width: 1.4em;
+  /* padding-top: 0.3em; */
+  filter: invert(1);
+  opacity: 0.6;
 }
