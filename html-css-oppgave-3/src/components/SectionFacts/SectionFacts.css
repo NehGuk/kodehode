@@ -1,14 +1,12 @@
 .facts {
   min-height: 100vh;
-  /* padding: 3em 3em 1em 3em; */
-  background-color: #462921;
+  background-color: var(--mars-brown-1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .facts_box {
-  /* background-color: bisque; */
   width: 90vw;
   max-height: 80vh;
   display: flex;
@@ -16,10 +14,6 @@
 }
 
 .facts_box_info {
-  /* margin-left: 2em; */
-  /* background-color: green; */
-
-  color: white;
   margin-left: auto;
 }
 
@@ -31,12 +25,54 @@
 .facts_box_info ol li {
   padding: 0.5em 0;
   max-width: 60ch;
+  border-bottom: 1px solid var(--mars-accent-muted);
+}
+
+.facts_box_info ol li:last-child {
+  border-bottom: none;
+}
+
+#cta-2 {
+  font-family: var(--mars-heading);
+  color: var(--mars-accent);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+#cta-2:hover {
+  opacity: 0.9;
+  transition: ease-in-out 0.2s;
 }
 
 .facts_box_image {
-  /* background-color: green; */
   max-width: 40em;
   margin-right: auto;
+  filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
+    drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+}
+
+@keyframes marsGlow {
+  0% {
+    filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
+      drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 225, 0, 0.3))
+      drop-shadow(0 0 40px rgba(184, 190, 51, 0.2));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
+      drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+  }
+}
+
+.facts_box_image {
+  max-width: 40em;
+  margin-right: auto;
+  animation: marsGlow 4s ease-in-out infinite;
 }
 
 @media (max-width: 1024px) {

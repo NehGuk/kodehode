@@ -17,11 +17,6 @@
   margin-top: 20em;
 }
 
-h1 {
-  color: white;
-  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
-}
-
 p {
   padding: 0 9em;
   max-width: 700px;
@@ -30,14 +25,24 @@ p {
 }
 
 #cta {
-  background-color: rgba(240 240 20 / 10%);
-  border: 1px solid yellow;
+  background-color: var(--mars-accent);
+  border: 1px solid var(--mars-accent-muted);
   backdrop-filter: blur(10px);
   padding: 1em 3em;
   border-radius: 30px;
   margin-top: auto;
-  color: white;
+  font-family: var(--mars-heading);
+  color: var(--text-body);
+  letter-spacing: 0.05em;
   text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+#cta:hover {
+  background-color: var(--mars-accent-muted);
+  border: 1px solid var(--mars-accent);
+  opacity: 0.9;
+  transition: ease-in-out 0.2s;
 }
 
 @media (max-width: 1024px) {

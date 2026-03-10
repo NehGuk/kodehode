@@ -1,9 +1,30 @@
+@import url("https://fonts.bunny.net/css?family=oswald:100,400,700|arvo:100,400,700");
+
 :root {
+  /* housekeeping */
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   line-height: 1.5;
-  font-weight: 400;
-  background-color: black;
+
   --navbar-height: 3rem;
+
+  /* colours */
+  --mars-dark: rgba(35, 22, 22, 1);
+  --mars-brown-1: rgba(51, 32, 18, 1);
+  --mars-brown-2: rgba(70, 41, 33, 1);
+  --mars-super-dark: rgba(15, 10, 10, 1);
+  --mars-accent: rgba(220, 170, 40, 1);
+  --mars-accent-muted: rgba(220, 170, 40, 0.2);
+  --mars-navbar: rgba(10, 10, 30, 0.2);
+
+  /* typography */
+  --mars-heading: "Oswald", sans-serif;
+  --mars-body: "Arvo", serif;
+  --text-navbar: rgba(220, 210, 200);
+  --text-body: rgba(220, 210, 200, 1);
+  --text-heading: rgba(240, 235, 225, 1);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--mars-super-dark);
 }

@@ -1,7 +1,7 @@
 .gallery {
   min-height: 100vh;
   padding: 5em 3em;
-  background-color: #231616;
+  background-color: var(--mars-dark);
 }
 
 .gallery h2 {

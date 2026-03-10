@@ -1,14 +1,8 @@
 .footer {
-  min-height: 30vh;
-  background-color: black;
+  height: 20vh;
+  background-color: var(--mars-super-dark);
   display: flex;
-  /* gap: 2em; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h3 {
-  /* padding: 0; */
-  color: darkorchid;
 }

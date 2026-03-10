@@ -7,36 +7,32 @@ function SectionResources() {
         <h2>Resources</h2>
         <ul>
           <li>
-            The European Space Agency, ESA |{" "}
             <a
               href="https://www.esa.int/Enabling_Support/Operations/Solar_system_exploration"
               target="_blank"
             >
-              Solar system exploration
+              The European Space Agency :: Solar system exploration
             </a>
           </li>
           <li>
-            NASA |{" "}
             <a
               href="https://science.nasa.gov/solar-system/planets/"
               target="_blank"
             >
-              About the planets
+              NASA :: About the planets
             </a>
           </li>
           <li>
-            The Planetary Society |{" "}
             <a href="https://www.planetary.org/worlds/mars" target="_blank">
-              Mars, the red planet
+              The Planetary Society :: Mars, the red planet
             </a>
           </li>
           <li>
-            National Geographic |{" "}
             <a
               href="https://www.nationalgeographic.com/science/article/mars-1"
               target="_blank"
             >
-              Planet Mars, explained
+              National Geographic :: Planet Mars, explained
             </a>
           </li>
         </ul>

@@ -7,8 +7,38 @@ body {
 h1 {
   margin: 0;
   padding: 0;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  font-family: var(--mars-heading);
+  color: var(--text-heading);
+  font-size: 2.5em;
 }
 
+h2 {
+  font-family: var(--mars-heading);
+  font-size: 2em;
+  color: var(--text-heading);
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-family: var(--mars-heading);
+  font-size: 1.4em;
+  color: var(--mars-accent);
+}
+
+p,
+li {
+  font-family: var(--mars-body);
+  font-weight: 100;
+  color: var(--text-body);
+}
 a {
+  color: var(--mars-body);
   text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--mars-accent);
+  transition: ease-in-out 0.2s;
 }

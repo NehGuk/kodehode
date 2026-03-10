@@ -1,5 +1,5 @@
 nav {
-  background-color: rgba(10 10 30 / 20%);
+  background-color: var(--mars-navbar);
   height: var(navbar-height);
   width: 90%;
   display: flex;
@@ -26,8 +26,15 @@ nav ol li {
 }
 
 nav ol li a {
-  color: rgba(200 200 200 / 80%);
+  color: var(--text-navbar);
+  opacity: 0.6;
   text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+nav ol li a:hover {
+  opacity: 0.9;
+  transition: ease-in-out 0.2s;
 }
 
 nav ol li:first-child {
@@ -37,7 +44,12 @@ nav ol li:first-child {
 
 .nav_logo {
   width: 1.4em;
-  /* padding-top: 0.3em; */
   filter: invert(1);
   opacity: 0.6;
+  transition: ease-in-out 0.2s;
+}
+
+.nav_logo:hover {
+  opacity: 0.9;
+  transition: ease-in-out 0.2s;
 }

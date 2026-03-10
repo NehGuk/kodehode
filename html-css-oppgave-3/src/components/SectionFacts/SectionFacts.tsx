@@ -4,33 +4,9 @@ import marsImage from "../../assets/mars.png"
 function SectionFacts() {
   return (
     <section className="facts" id="2">
-      {/* <article className="facts_box">
-        <div className="facts_box_text">
-          <h2>Facts</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            sapiente nulla hic nobis amet nihil ducimus a assumenda, quia.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            sapiente nulla hic nobis amet nihil ducimus, adipisci voluptate
-            consequatur at minima sed odio delectus blanditiis eligendi numquam?
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            sapiente nulla hic nobis amet nihil ducimus a assumenda, quia,
-            adipisci voluptate consequatur at minima sed odio delectus
-            blanditiis eligendi numquam?
-          </p>
-        </div>
-        <div className="facts_box_image">
-          <img src={marsImage} />
-        </div>
-      </article> */}
-
       <article className="facts_box">
         <div className="facts_box_info">
-          <h2>Fun facts about Mars</h2>
+          <h2>Fun facts</h2>
           <ol>
             <li>
               <strong>A day on Mars</strong> is almost the same as Earth — a
@@ -53,6 +29,11 @@ function SectionFacts() {
               that rivers, lakes and even oceans once covered the surface
               billions of years ago. Today it's frozen at the poles and possibly
               underground!
+            </li>
+            <li>
+              <a href="#3" id="cta-2">
+                Keep exploring
+              </a>
             </li>
           </ol>
         </div>
