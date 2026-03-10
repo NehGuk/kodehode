@@ -78,7 +78,6 @@
     margin: 0 auto;
   }
   .facts_box_image {
-    /* background-color: green; */
     max-width: 20em;
     justify-self: center;
     margin: 0 auto;
@@ -87,7 +86,5 @@
 
 @media (max-width: 700px) {
   .facts_box_info h2 {
-    /* background-color: white; */
-    /* margin: 0 auto; */
   }
 }

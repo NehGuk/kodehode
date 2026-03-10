@@ -13,9 +13,6 @@
   flex-direction: column;
 }
 
-.resources_box h2 {
-}
-
 .resources_box ul {
   list-style: circle;
   padding: 0;

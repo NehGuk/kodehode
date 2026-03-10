@@ -17,9 +17,6 @@ function Navbar() {
         <li>
           <a href="#3">Gallery</a>
         </li>
-        {/* <li>
-          <a href="#4">Video</a>
-        </li> */}
         <li>
           <a href="#5">Resources</a>
         </li>
