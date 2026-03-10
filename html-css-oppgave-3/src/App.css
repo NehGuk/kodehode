@@ -29,8 +29,9 @@ h3 {
 p,
 li {
   font-family: var(--mars-body);
-  font-weight: 100;
+  font-weight: 300;
   color: var(--text-body);
+  opacity: 0.85;
 }
 a {
   color: var(--mars-body);
