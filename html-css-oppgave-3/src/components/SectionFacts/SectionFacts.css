@@ -48,23 +48,31 @@
 .facts_box_image {
   max-width: 40em;
   margin-right: auto;
-  animation: marsGlow 4s ease-in-out infinite;
+  animation: marsGlow 6s ease-in-out infinite;
 }
 
 @keyframes marsGlow {
   0% {
     filter: drop-shadow(0 0 5px rgba(255, 72, 0, 0.3))
-      drop-shadow(0 0 15px rgba(210, 218, 59, 0.2));
+      drop-shadow(0 0 15px rgba(222, 200, 37, 0.2));
   }
 
+  25% {
+    filter: drop-shadow(0 0 8px rgba(218, 195, 27, 0.3))
+      drop-shadow(0 0 16px rgba(214, 195, 51, 0.2));
+  }
   50% {
-    filter: drop-shadow(0 0 5px rgba(255, 225, 0, 0.3))
-      drop-shadow(0 0 15px rgba(184, 190, 51, 0.2));
+    filter: drop-shadow(0 0 10px rgba(185, 159, 26, 0.382))
+      drop-shadow(0 0 18px rgba(163, 107, 30, 0.411));
+  }
+  75% {
+    filter: drop-shadow(0 0 8px rgba(206, 138, 10, 0.3))
+      drop-shadow(0 0 16px rgba(203, 125, 16, 0.2));
   }
 
   100% {
     filter: drop-shadow(0 0 5px rgba(255, 72, 0, 0.3))
-      drop-shadow(0 0 15px rgba(210, 218, 59, 0.2));
+      drop-shadow(0 0 15px rgba(222, 200, 37, 0.2));
   }
 }
 
