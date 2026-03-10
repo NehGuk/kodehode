@@ -48,31 +48,24 @@
 .facts_box_image {
   max-width: 40em;
   margin-right: auto;
-  filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
-    drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+  animation: marsGlow 4s ease-in-out infinite;
 }
 
 @keyframes marsGlow {
   0% {
-    filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
-      drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+    filter: drop-shadow(0 0 10px rgba(255, 72, 0, 0.3))
+      drop-shadow(0 0 30px rgba(210, 218, 59, 0.2));
   }
 
   50% {
-    filter: drop-shadow(0 0 20px rgba(255, 225, 0, 0.3))
-      drop-shadow(0 0 40px rgba(184, 190, 51, 0.2));
+    filter: drop-shadow(0 0 10px rgba(255, 225, 0, 0.3))
+      drop-shadow(0 0 30px rgba(184, 190, 51, 0.2));
   }
 
   100% {
-    filter: drop-shadow(0 0 20px rgba(255, 72, 0, 0.3))
-      drop-shadow(0 0 40px rgba(210, 218, 59, 0.2));
+    filter: drop-shadow(0 0 10px rgba(255, 72, 0, 0.3))
+      drop-shadow(0 0 30px rgba(210, 218, 59, 0.2));
   }
-}
-
-.facts_box_image {
-  max-width: 40em;
-  margin-right: auto;
-  animation: marsGlow 4s ease-in-out infinite;
 }
 
 @media (max-width: 1024px) {
