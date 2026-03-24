@@ -1,4 +1,86 @@
+@import url(https://fonts.bunny.net/css?family=comic-neue:700);
+
 :root {
+  --color-background: rgb(228, 228, 228);
+  --color-title: rgb(110, 196, 110);
+  --color-sub-headers: rgb(0, 85, 0);
+  --color-text: rgb(64, 64, 64);
+  --color-button-background: rgb(0, 144, 86);
+  --color-button-text: rgb(255, 255, 255);
+  --color-button-border: rgb(110, 196, 110);
+  --primary-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --ugly-font: "Comic Neue", handwriting;
+}
+
+* {
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+header {
+  background-color: rgb(22, 108, 42);
+  color: var(--color-title);
+  min-height: 10rem;
+  padding: 3 rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  color:;
+}
+
+h3 {
+  color: rgb(0, 111, 0);
+  margin-bottom: 0.5rem;
+}
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+button {
+  margin-top: 1rem;
+  background: var(--color-button-background);
+  color: var(--color-button-text);
+  border: 2px solid var(--color-button-border);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
+button:hover {
+  background: var(--color-button-background);
+  color: var(--color-button-text);
+  border: 2px solid var(--color-sub-headers);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+#crasher:hover {
+  background: red;
+  color: var(--color-button-text);
 }
