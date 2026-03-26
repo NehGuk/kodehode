@@ -1,0 +1,12 @@
+#sound-container-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sound-container-base > div {
+  flex: 1;
+  border: 1px solid purple;
+  padding: 3rem 5rem;
+}
