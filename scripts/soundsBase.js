@@ -10,7 +10,11 @@ for (let keyBase in soundMapBase) {
   soundContainerBase.append(soundElementBase)
 
   const textElementBase = document.createElement("p")
-  textElementBase.textContent = `${keyBase} ${soundMapBase[keyBase]}`
+  const spanElementBase = document.createElement("span")
+
+  spanElementBase.textContent = keyBase
+  textElementBase.textContent = ` ${soundMapBase[keyBase]}`
+  textElementBase.prepend(spanElementBase)
   soundElementBase.append(textElementBase)
 
   soundElementBase.addEventListener("click", () =>

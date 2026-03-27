@@ -25,7 +25,11 @@ for (let key in soundMap) {
   soundContainer.append(soundElement)
 
   const textElement = document.createElement("p")
-  textElement.textContent = `${key} ${soundMap[key]}`
+  const spanElement = document.createElement("span")
+
+  spanElement.textContent = key
+  textElement.textContent = ` ${soundMap[key]}`
+  textElement.prepend(spanElement)
   soundElement.append(textElement)
 
   soundElement.addEventListener("click", () => playSound(soundMap[key]))
