@@ -12,7 +12,7 @@
   --color-text-primary: rgb(228, 228, 228);
   --color-text-secondary: rgb(255, 202, 202);
   --color-accent: rgb(252, 23, 23);
-  --color-crazy: rgb(223, 0, 223);
+  --color-crazy: rgb(169, 15, 169);
   --font-primary: "Electrolize", sans-serif;
   --transition-shock: ease-in-out 0.2s;
 }
@@ -27,7 +27,6 @@ body {
   display: grid;
   grid-template-rows: 20dvh 10dvh 50dvh 20dvh;
   grid-template-columns: 1fr;
-  /* grid-gap: 1rem; */
 }
 
 .main_container > * {
@@ -43,11 +42,12 @@ nav {
 }
 
 .logo {
-  max-width: 9rem;
+  max-width: 18rem;
 }
 
 #title {
   color: var(--color-accent);
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,11 @@
 #sound-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
 }
 
 #sound-container > div {
+  /* padding: 1rem 1rem; */
 }
 
 @media (max-width: 800px) {
