@@ -13,6 +13,8 @@
   --color-text-secondary: rgb(255, 202, 202);
   --color-accent: rgb(252, 23, 23);
   --color-crazy: rgb(169, 15, 169);
+  --color-key-span-border: rgb(127, 127, 127);
+  --color-key-span-bkg: rgb(44, 44, 44);
   --font-primary: "Electrolize", sans-serif;
   --transition-shock: ease-in-out 0.2s;
 }
@@ -57,6 +59,8 @@ nav {
 .sound-button {
   background-color: var(--color-bkg-2);
   margin: 1rem;
+  padding: 0.3rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +78,16 @@ nav {
   justify-content: center;
   align-items: center;
   transition: var(--transition-shock);
+}
+
+span {
+  font-size: small;
+  color: var(--color-key-span-border);
+  border: solid 1px var(--color-key-span-border);
+  background-color: var(--color-key-span-bkg);
+  border-radius: 3px;
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.5rem;
 }
 
 .sound-button-base:hover {
