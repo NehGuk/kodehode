@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=advent-pro:100,200,400,700|electrolize:400);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +9,18 @@
 :root {
   --color-bkg-1: rgb(29, 29, 29);
   --color-bkg-2: rgb(66, 66, 66);
-  --color-text-primary: rgb(1, 187, 1);
+  --color-text-primary: rgb(228, 228, 228);
+  --color-text-secondary: rgb(255, 202, 202);
+  --color-accent: rgb(252, 23, 23);
+  --color-crazy: rgb(223, 0, 223);
+  --font-primary: "Electrolize", sans-serif;
+  --transition-shock: ease-in-out 0.2s;
 }
 
 body {
-  background-color: var(--color-bkg-2);
+  font-family: var(--font-primary);
+  background-color: var(--color-bkg-1);
   color: var(--color-text-primary);
-  font-family: "Courier New", Courier, monospace;
 }
 
 .main_container {
@@ -24,7 +31,7 @@ body {
 }
 
 .main_container > * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 nav {
@@ -39,18 +46,39 @@ nav {
   max-width: 9rem;
 }
 
+#title {
+  color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
 .sound-button {
-  border: solid 1px yellow;
-  background-color: darkred;
+  background-color: var(--color-bkg-2);
   margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-shock);
+}
+
+.sound-button:hover {
+  background-color: var(--color-accent);
 }
 
 .sound-button-base {
-  border: solid 1px yellow;
-  background-color: purple;
+  background-color: var(--color-bkg-2);
   margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-shock);
 }
 
+.sound-button-base:hover {
+  background-color: var(--color-crazy);
+}
 @media (max-width: 800px) {
   .main-container {
     grid-template-rows: 20dvh 10dvh auto 20dvh;
