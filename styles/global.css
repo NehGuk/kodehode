@@ -14,15 +14,13 @@ body {
   background-color: var(--color-bkg-2);
   color: var(--color-text-primary);
   font-family: "Courier New", Courier, monospace;
-  max-height: 90dvh;
-  max-width: 100dvw;
 }
 
 .main_container {
   display: grid;
-  grid-template-rows: auto 0.5fr auto;
-  gap: 1rem;
-  height: 100dvh;
+  grid-template-rows: 20dvh 10dvh 50dvh 20dvh;
+  grid-template-columns: 1fr;
+  /* grid-gap: 1rem; */
 }
 
 .main_container > * {
@@ -31,8 +29,6 @@ body {
 
 nav {
   background-color: var(--color-bkg-1);
-  padding: 0.3rem;
-  min-height: 20dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,5 +40,19 @@ nav {
 }
 
 .sound-button {
-  /* background-color: var(--color-bkg-1); */
+  border: solid 1px yellow;
+  background-color: darkred;
+  margin: 1rem;
+}
+
+.sound-button-base {
+  border: solid 1px yellow;
+  background-color: purple;
+  margin: 1rem;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    grid-template-rows: 20dvh 10dvh auto 20dvh;
+  }
 }

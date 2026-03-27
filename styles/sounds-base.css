@@ -1,12 +1,7 @@
 #sound-container-base {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #sound-container-base > div {
-  flex: 1;
-  border: 1px solid purple;
-  padding: 3rem 5rem;
 }
