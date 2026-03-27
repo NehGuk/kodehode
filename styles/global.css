@@ -31,20 +31,16 @@ body {
   grid-template-columns: 1fr;
 }
 
-.main_container > * {
-  /* border: 1px solid red; */
-}
-
 nav {
   background-color: var(--color-bkg-1);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
 }
 
 .logo {
-  max-width: 18rem;
+  max-width: 22rem;
 }
 
 #title {
