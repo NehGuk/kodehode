@@ -1,7 +1,9 @@
 const soundContainerBase = document.querySelector("#sound-container-base")
 const soundMapBase = {
-  z: "drums-1",
-  m: "bassline-1",
+  z: "drums",
+  m: "bass",
+  x: "drums-psycho",
+  n: "bass-industrial",
 }
 
 for (let keyBase in soundMapBase) {
